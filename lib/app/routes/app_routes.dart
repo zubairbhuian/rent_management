@@ -5,10 +5,18 @@ part of 'app_pages.dart';
 
 abstract class Routes {
   Routes._();
-  static const HOME = _Paths.HOME;
+  static const WELCOME = _Paths.WELCOME;
+  static const SIGN_UP = _Paths.SIGN_UP;
+  static const SIGN_IN = _Paths.SIGN_IN;
+  static const FORGET_PASSWORT = _Paths.FORGET_PASSWORT;
+  static const ENTRY_POINT = _Paths.ENTRY_POINT;
 }
 
 abstract class _Paths {
   _Paths._();
-  static const HOME = '/home';
+  static const WELCOME = '/welcome';
+  static const SIGN_UP = '/sign-up';
+  static const SIGN_IN = '/sign-in';
+  static const FORGET_PASSWORT = '/forget-passwort';
+  static const ENTRY_POINT = '/entry-point';
 }
