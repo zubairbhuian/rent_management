@@ -13,10 +13,13 @@ class WelcomeView extends GetView<WelcomeController> {
         title: const Text('WelcomeView'),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text(
-          'WelcomeView is working',
-          style: TextStyle(fontSize: 20),
+      body:  Center(
+        child: ElevatedButton(
+          onPressed: (){},
+          child: const Text(
+            'WelcomeView is working',
+            style: TextStyle(fontSize: 20),
+          ),
         ),
       ),
     );

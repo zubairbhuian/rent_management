@@ -115,7 +115,7 @@ class PopupDialog {
                           ),
                           24.height,
                           // title
-                          const Text(
+                          Text(
                             "Are you sure you want to logout?",
                             style: kTitleLarge,
                             textAlign: TextAlign.center,

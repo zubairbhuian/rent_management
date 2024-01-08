@@ -10,10 +10,11 @@ class Preferences {
   static const String IS_USER_SIGNIN = 'is_user_signin';
   static const String KEY_IS_ACTIVER_EXPERT = 'is_active_Expert';
 
-  ///  ? init pref
+  ///  ====== init pref ============
   static Future<void> init() async {
     preferences = await SharedPreferences.getInstance();
   }
+  
   
   /// is user signin
   static bool get isUserSignin => preferences.getBool(IS_USER_SIGNIN) ?? false;

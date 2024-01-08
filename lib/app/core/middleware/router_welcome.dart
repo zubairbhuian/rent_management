@@ -1,7 +1,9 @@
 // import 'package:flutter/material.dart';
 // import 'package:get/get.dart';
-// import 'package:outdoor/app/core/services/base/preferences.dart';
-// import 'package:outdoor/app/routes/app_pages.dart';
+// import 'package:rent_management/app/routes/app_pages.dart';
+
+
+// import '../services/base/preferences.dart';
 
 // class RouteWlcomMiddleware extends GetMiddleware {
 //   @override
@@ -10,7 +12,7 @@
 //       // user is Signin
 //       // return should be application screen
 //       // kLogger.e("user has token");
-//       return const RouteSettings(name: Routes.APPLICATION);
+//       return const RouteSettings(name: Routes.ENTRY_POINT);
 //     } else {
 //       // user token is empty
 //       // return should be login screen

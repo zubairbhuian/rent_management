@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rent_management/app/core/utils/my_func.dart';
 
 import '../color.dart';
 import '../fonts.dart';
@@ -9,9 +10,9 @@ import 'text_theme.dart';
 ThemeData theme = ThemeData(
   scaffoldBackgroundColor: const Color(0xffF7F9FA),
   fontFamily: Fonts.primary,
-  primarySwatch: Colors.blue,
+  primarySwatch:MyFunc.createMaterialColor(const Color(0xff8A0051)),
   splashColor: kPrimaryColor.withOpacity(.1),
-  appBarTheme: const AppBarTheme(color: Color(0xff333333)),
+  // appBarTheme: const AppBarTheme(color: Color(0xff333333)),
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(
     backgroundColor: kWhite,
   ),
@@ -20,3 +21,5 @@ ThemeData theme = ThemeData(
   colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.grey)
       .copyWith(background: const Color(0xffFFFFFF)),
 );
+
+
