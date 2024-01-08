@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:rent_management/app/core/utils/int_extensions.dart';
 
 import '../controllers/welcome_controller.dart';
 
@@ -9,19 +10,23 @@ class WelcomeView extends GetView<WelcomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('WelcomeView'),
-        centerTitle: true,
-      ),
-      body:  Center(
-        child: ElevatedButton(
-          onPressed: (){},
-          child: const Text(
-            'WelcomeView is working',
-            style: TextStyle(fontSize: 20),
-          ),
+        body: Container(
+      width: double.infinity,
+      height: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      decoration: const BoxDecoration(
+          image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/splash.png'))),
+      child: Column(mainAxisAlignment: MainAxisAlignment.end, children: [
+        ElevatedButton(
+          onPressed: () {
+            controller.onGetStared();
+          },
+          child: const Center(child: Text("Get stared")),
         ),
-      ),
-    );
+        100.height,
+      ]),
+    ));
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../color.dart';
 import '../fonts.dart';
@@ -14,13 +15,13 @@ class Buttons {
     disabledForegroundColor: kDisabledTextColor,
     disabledBackgroundColor: kDisabledColor,
     surfaceTintColor: kWhite,
-    textStyle: const TextStyle(
+    textStyle:  TextStyle(
         color: kRed,
         fontFamily: Fonts.primary,
-        fontSize: 18,
+        fontSize: 16.sp,
         fontWeight: FontWeight.w500),
     shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(27), // Change the border radius value
+      borderRadius: BorderRadius.circular(12), // Change the border radius value
     ),
   ));
 }

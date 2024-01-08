@@ -17,6 +17,7 @@ ThemeData theme = ThemeData(
     backgroundColor: kWhite,
   ),
   textTheme: kTextTheme,
+  
   elevatedButtonTheme:Buttons.elevatedButtonTheme,
   colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.grey)
       .copyWith(background: const Color(0xffFFFFFF)),

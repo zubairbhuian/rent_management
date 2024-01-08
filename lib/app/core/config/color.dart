@@ -6,8 +6,8 @@ const Color kTextColor = Color(0xff000000);
 const Color kTextColorLight = Color(0xff858992);
 
 
-const Color kDisabledColor = Color(0xffF4F4F4);
-const Color kDisabledTextColor = Color(0xffC9C9CE);
+const Color kDisabledColor = Color.fromARGB(255, 211, 211, 211);
+const Color kDisabledTextColor = Color(0xff8A7F85);
 
 // common
 const Color kScaffoldBGColor = Colors.white;
