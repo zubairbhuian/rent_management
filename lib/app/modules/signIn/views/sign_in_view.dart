@@ -8,32 +8,27 @@ import 'package:rent_management/app/widgets/custom_textfield.dart';
 import '../controllers/sign_in_controller.dart';
 
 class SignInView extends GetView<SignInController> {
- 
-
   const SignInView({super.key});
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body:SingleChildScrollView(
-        padding: const EdgeInsetsDirectional.symmetric(
-          horizontal: 20,
-          vertical: 30
-        ),
-        child:Column(
-          children: [
-            SizedBox(height: 100.h,),
-          const CustomTextField(
-            isShowHideBTN: true,
-            obscureText: true,
-            prefixUrl: 'assets/svgs/person.svg',
-            prefixIcon: Icon(Icons.abc_outlined),
-          ),
-             const CustomTextField(
-              prefixUrl: "assets/svgs/key.svg",
-
-            prefixIcon: Icon(Icons.abc_outlined),
-          ),
-        ],)),
+    return Scaffold(
+      body: SingleChildScrollView(
+          padding: const EdgeInsetsDirectional.symmetric(
+              horizontal: 20, vertical: 30),
+          child: Column(
+            children: [
+              SizedBox(
+                height: 100.h,
+              ),
+              const CustomTextField(
+                prefixUrl: 'assets/svgs/person.svg',
+              ),
+              const CustomTextField(
+                isShowHideBTN: true,
+                prefixUrl: "assets/svgs/key.svg",
+              ),
+            ],
+          )),
     );
   }
 }
