@@ -17,7 +17,7 @@ class WelcomeView extends GetView<WelcomeController> {
       decoration: const BoxDecoration(
           image: DecorationImage(
               fit: BoxFit.cover,
-              image: AssetImage('assets/images/splash.png'))),
+              image: AssetImage('assets/images/welcome_bg.png'))),
       child: Column(mainAxisAlignment: MainAxisAlignment.end, children: [
         ElevatedButton(
           onPressed: () {

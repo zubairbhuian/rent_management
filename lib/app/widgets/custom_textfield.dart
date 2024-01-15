@@ -191,8 +191,8 @@ class _CustomTextFieldState extends State<CustomTextField> {
                         child: Center(
                           child: SvgPicture.asset(
                             _isShowPasss
-                                ? "assets/svgs/pass_show.svg"
-                                : "assets/svgs/pass_hide.svg",
+                                ? "assets/icons/auth/Show.svg"
+                                : "assets/icons/auth/Hide.svg",
                             color: _focusNode.hasFocus
                                 ? kPrimaryColor
                                 : kDisabledTextColor,
