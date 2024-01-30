@@ -1,9 +1,9 @@
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class SignInController extends GetxController {
-  //TODO: Implement SignInController
-
-  final count = 0.obs;
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
   @override
   void onInit() {
     super.onInit();
@@ -18,6 +18,4 @@ class SignInController extends GetxController {
   void onClose() {
     super.onClose();
   }
-
-  void increment() => count.value++;
 }

@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:rent_management/app/core/config/color.dart';
 import 'package:rent_management/app/core/config/style.dart';
 import 'package:rent_management/app/core/utils/int_extensions.dart';
+import 'package:rent_management/app/core/utils/logger.dart';
 import 'package:rent_management/app/widgets/custom_textfield.dart';
 
 import '../controllers/sign_in_controller.dart';
@@ -40,13 +41,21 @@ class SignInView extends GetView<SignInController> {
 
 
 
-              const CustomTextField(
+               CustomTextField(
+                controller: controller.emailController,
                 prefixUrl: 'assets/icons/auth/person.svg',
               ),
-              const CustomTextField(
+               CustomTextField(
+                controller: controller.passwordController,
                 isShowHideBTN: true,
                 prefixUrl: "assets/icons/auth/key.svg",
               ),
+              50.height,
+              ElevatedButton(onPressed: (){
+                if(controller.emailController.text.length ==2){
+                  kLogger.e("message");
+                }
+              }, child: const Text("Sign In"))
             ],
           )),
     );
